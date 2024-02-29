@@ -29,7 +29,7 @@ def get_videos(url, extra_params):
         'format': 'best',
         'cachedir': False,
         'logger': current_app.logger.getChild('youtube-dl'),
-        'proxy': current_app.config['proxy'],
+        # 'proxy': current_app.config['proxy'],
     }
     ydl_params.update(extra_params)
     ydl = SimpleYDL(ydl_params)
