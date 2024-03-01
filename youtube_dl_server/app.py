@@ -4,9 +4,9 @@ import traceback
 import sys
 
 from flask import Flask, Blueprint, current_app, jsonify, request, redirect, abort
-import youtube_dl
-from youtube_dl.version import __version__ as youtube_dl_version
-from youtube_dl.utils import std_headers, random_user_agent
+import yt_dlp as youtube_dl
+from yt_dlp.version import __version__ as youtube_dl_version
+from yt_dlp.utils import std_headers, random_user_agent
 
 from .version import __version__
 
